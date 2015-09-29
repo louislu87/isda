@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EA266C71-7630-4341-A8D1-E4C6803DDCBA}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>isda_cds_pricer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>$(ProjectDir)\include\isda;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\isda\badday.h" />
+    <ClInclude Include="include\isda\bastypes.h" />
+    <ClInclude Include="include\isda\bsearch.h" />
+    <ClInclude Include="include\isda\buscache.h" />
+    <ClInclude Include="include\isda\busday.h" />
+    <ClInclude Include="include\isda\cashflow.h" />
+    <ClInclude Include="include\isda\cdate.h" />
+    <ClInclude Include="include\isda\cds.h" />
+    <ClInclude Include="include\isda\cdsone.h" />
+    <ClInclude Include="include\isda\cerror.h" />
+    <ClInclude Include="include\isda\cfileio.h" />
+    <ClInclude Include="include\isda\cfinanci.h" />
+    <ClInclude Include="include\isda\cgeneral.h" />
+    <ClInclude Include="include\isda\cheaders.h" />
+    <ClInclude Include="include\isda\cmemory.h" />
+    <ClInclude Include="include\isda\contingentleg.h" />
+    <ClInclude Include="include\isda\convert.h" />
+    <ClInclude Include="include\isda\cx.h" />
+    <ClInclude Include="include\isda\cxbsearch.h" />
+    <ClInclude Include="include\isda\cxdatelist.h" />
+    <ClInclude Include="include\isda\cxzerocurve.h" />
+    <ClInclude Include="include\isda\dateadj.h" />
+    <ClInclude Include="include\isda\dateconv.h" />
+    <ClInclude Include="include\isda\datelist.h" />
+    <ClInclude Include="include\isda\date_sup.h" />
+    <ClInclude Include="include\isda\defaulted.h" />
+    <ClInclude Include="include\isda\dtlist.h" />
+    <ClInclude Include="include\isda\feeleg.h" />
+    <ClInclude Include="include\isda\fltrate.h" />
+    <ClInclude Include="include\isda\gtozc.h" />
+    <ClInclude Include="include\isda\interp.h" />
+    <ClInclude Include="include\isda\ldate.h" />
+    <ClInclude Include="include\isda\lintrp.h" />
+    <ClInclude Include="include\isda\lprintf.h" />
+    <ClInclude Include="include\isda\macros.h" />
+    <ClInclude Include="include\isda\mdydate.h" />
+    <ClInclude Include="include\isda\metric.h" />
+    <ClInclude Include="include\isda\rtbrent.h" />
+    <ClInclude Include="include\isda\schedule.h" />
+    <ClInclude Include="include\isda\streamcf.h" />
+    <ClInclude Include="include\isda\strutil.h" />
+    <ClInclude Include="include\isda\stub.h" />
+    <ClInclude Include="include\isda\tcurve.h" />
+    <ClInclude Include="include\isda\timeline.h" />
+    <ClInclude Include="include\isda\version.h" />
+    <ClInclude Include="include\isda\yearfrac.h" />
+    <ClInclude Include="include\isda\zcprvt.h" />
+    <ClInclude Include="include\isda\zerocurve.h" />
+    <ClInclude Include="include\isda\zr2coup.h" />
+    <ClInclude Include="include\isda\zr2fwd.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\zcswdate.h" />
+    <ClInclude Include="Stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\badday.c" />
+    <ClCompile Include="src\bsearch.c" />
+    <ClCompile Include="src\buscache.c" />
+    <ClCompile Include="src\busday.c" />
+    <ClCompile Include="src\cashflow.c" />
+    <ClCompile Include="src\cds.c" />
+    <ClCompile Include="src\cdsbootstrap.c" />
+    <ClCompile Include="src\cdsone.c" />
+    <ClCompile Include="src\cerror.c" />
+    <ClCompile Include="src\cfileio.c" />
+    <ClCompile Include="src\cfinanci.cpp" />
+    <ClCompile Include="src\cmemory.c" />
+    <ClCompile Include="src\contingentleg.c" />
+    <ClCompile Include="src\convert.c" />
+    <ClCompile Include="src\cx.c" />
+    <ClCompile Include="src\cxbsearch.c" />
+    <ClCompile Include="src\cxdatelist.c" />
+    <ClCompile Include="src\cxzerocurve.c" />
+    <ClCompile Include="src\dateadj.c" />
+    <ClCompile Include="src\dateconv.c" />
+    <ClCompile Include="src\datelist.c" />
+    <ClCompile Include="src\date_sup.c" />
+    <ClCompile Include="src\defaulted.c" />
+    <ClCompile Include="src\dtlist.c" />
+    <ClCompile Include="src\feeleg.c" />
+    <ClCompile Include="src\fltrate.c" />
+    <ClCompile Include="src\gtozc.c" />
+    <ClCompile Include="src\interpc.c" />
+    <ClCompile Include="src\ldate.c" />
+    <ClCompile Include="src\linterpc.c" />
+    <ClCompile Include="src\lintrp1.c" />
+    <ClCompile Include="src\lprintf.c" />
+    <ClCompile Include="src\lscanf.c" />
+    <ClCompile Include="src\rtbrent.c" />
+    <ClCompile Include="src\schedule.c" />
+    <ClCompile Include="src\streamcf.c" />
+    <ClCompile Include="src\strutil.c" />
+    <ClCompile Include="src\stub.c" />
+    <ClCompile Include="src\tcurve.c" />
+    <ClCompile Include="src\timeline.c" />
+    <ClCompile Include="src\version.c" />
+    <ClCompile Include="src\yearfrac.c" />
+    <ClCompile Include="src\zcall.c" />
+    <ClCompile Include="src\zcswap.c" />
+    <ClCompile Include="src\zcswdate.c" />
+    <ClCompile Include="src\zcswutil.c" />
+    <ClCompile Include="src\zerocurve.c" />
+    <ClCompile Include="src\zr2coup.c" />
+    <ClCompile Include="src\zr2fwd.c" />
+    <ClCompile Include="Stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\bsearch.inc" />
+    <None Include="src\lintrp1.inc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

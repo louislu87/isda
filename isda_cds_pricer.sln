@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "isda_cds_pricer", "isda_cds_pricer\isda_cds_pricer.vcxproj", "{EA266C71-7630-4341-A8D1-E4C6803DDCBA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pricerTest", "pricerTest\pricerTest.vcxproj", "{79DDA924-364A-43D0-82A6-CA3D185D6017}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA266C71-7630-4341-A8D1-E4C6803DDCBA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EA266C71-7630-4341-A8D1-E4C6803DDCBA}.Debug|Win32.Build.0 = Debug|Win32
+		{EA266C71-7630-4341-A8D1-E4C6803DDCBA}.Release|Win32.ActiveCfg = Release|Win32
+		{EA266C71-7630-4341-A8D1-E4C6803DDCBA}.Release|Win32.Build.0 = Release|Win32
+		{79DDA924-364A-43D0-82A6-CA3D185D6017}.Debug|Win32.ActiveCfg = Debug|Win32
+		{79DDA924-364A-43D0-82A6-CA3D185D6017}.Debug|Win32.Build.0 = Debug|Win32
+		{79DDA924-364A-43D0-82A6-CA3D185D6017}.Release|Win32.ActiveCfg = Release|Win32
+		{79DDA924-364A-43D0-82A6-CA3D185D6017}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
